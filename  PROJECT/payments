@@ -1,0 +1,30 @@
+CREATE TABLE Payments (
+    PaymentID INT PRIMARY KEY,
+    ReservationID INT,
+    PaymentDate DATE,
+    AmountPaid DECIMAL(10, 2),
+    PaymentMethod VARCHAR(50),
+    FOREIGN KEY (ReservationID) REFERENCES Reservations(ReservationID)
+);
+
+INSERT INTO Payments (PaymentID, ReservationID, PaymentDate, AmountPaid, PaymentMethod) VALUES
+(1, 1, '2023-10-01', 500.00, 'Credit Card'),
+(2, 2, '2023-10-02', 600.00, 'Cash'),
+(3, 3, '2023-10-03', 450.00, 'PayPal'),
+(4, 4, '2023-10-04', 700.00, 'Credit Card'),
+(5, 5, '2023-10-05', 0.00, 'Cancelled'),  -- Assuming this payment was cancelled
+(6, 6, '2023-10-06', 650.00, 'Debit Card'),
+(7, 7, '2023-10-07', 480.00, 'Credit Card'),
+(8, 8, '2023-10-08', 520.00, 'Cash'),
+(9, 9, '2023-10-09', 600.00, 'PayPal'),
+(10, 10, '2023-10-10', 700.00, 'Credit Card'),
+(11, 11, '2023-10-11', 750.00, 'Debit Card'),
+(12, 12, '2023-10-12', 800.00, 'Credit Card'),
+(13, 13, '2023-10-13', 0.00, 'Cancelled'),  -- Assuming this payment was cancelled
+(14, 14, '2023-10-14', 500.00, 'Cash'),
+(15, 15, '2023-10-15', 550.00, 'PayPal'),
+(16, 16, '2023-10-16', 700.00, 'Credit Card'),
+(17, 17, '2023-10-17', 480.00, 'Debit Card'),
+(18, 18, '2023-10-18', 520.00, 'Cash'),
+(19, 19, '2023-10-19', 600.00, 'PayPal'),
+(20, 20, '2023-10-20', 700.00, 'Credit Card');

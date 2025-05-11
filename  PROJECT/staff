@@ -1,0 +1,29 @@
+CREATE TABLE Staff (
+    StaffID INT PRIMARY KEY,
+    FullName VARCHAR(100),
+    Salary DECIMAL(10, 2),
+    Role VARCHAR(50),
+    ContactInfo VARCHAR(100)
+);
+
+INSERT INTO Staff (StaffID, FullName, Salary, Role, ContactInfo) VALUES
+(1, 'Alice Johnson', 35000.00, 'Receptionist', 'alice.johnson@example.com'),
+(2, 'Bob Smith', 40000.00, 'Housekeeping', 'bob.smith@example.com'),
+(3, 'Charlie Brown', 60000.00, 'Manager', 'charlie.brown@example.com'),
+(4, 'Diana Prince', 45000.00, 'Receptionist', 'diana.prince@example.com'),
+(5, 'Ethan Hunt', 38000.00, 'Housekeeping', 'ethan.hunt@example.com'),
+(6, 'Fiona Gallagher', 70000.00, 'Manager', 'fiona.gallagher@example.com'),
+(7, 'George Clooney', 42000.00, 'Receptionist', 'george.clooney@example.com'),
+(8, 'Hannah Montana', 39000.00, 'Housekeeping', 'hannah.montana@example.com'),
+(9, 'Ian Malcolm', 62000.00, 'Manager', 'ian.malcolm@example.com'),
+(10, 'Julia Roberts', 36000.00, 'Receptionist', 'julia.roberts@example.com'),
+(11, 'Kevin Spacey', 41000.00, 'Housekeeping', 'kevin.spacey@example.com'),
+(12, 'Laura Croft', 68000.00, 'Manager', 'laura.croft@example.com'),
+(13, 'Michael Scott', 34000.00, 'Receptionist', 'michael.scott@example.com'),
+(14, 'Nina Simone', 43000.00, 'Housekeeping', 'nina.simone@example.com'),
+(15, 'Oscar Isaac', 70000.00, 'Manager', 'oscar.isaac@example.com'),
+(16, 'Paula Patton', 37000.00, 'Receptionist', 'paula.patton@example.com'),
+(17, 'Quentin Tarantino', 41000.00, 'Housekeeping', 'quentin.tarantino@example.com'),
+(18, 'Rachel Green', 65000.00, 'Manager', 'rachel.green@example.com'),
+(19, 'Steve Jobs', 39000.00, 'Receptionist', 'steve.jobs@example.com'),
+(20, 'Tina Fey', 42000.00, 'Housekeeping', 'tina.fey@example.com');

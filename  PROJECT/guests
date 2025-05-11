@@ -1,0 +1,28 @@
+CREATE TABLE Guests (
+    GuestID INT PRIMARY KEY,
+    FullName VARCHAR(100) NOT NULL,
+    PhoneNo VARCHAR(15) NOT NULL,
+    IDProof VARCHAR(50) NOT NULL
+);
+
+INSERT INTO Guests (GuestID, FullName, PhoneNo, IDProof) VALUES
+(1, 'John Doe', '123-456-7890', 'Passport'),
+(2, 'Jane Smith', '234-567-8901', 'Driver License'),
+(3, 'Alice Johnson', '345-678-9012', 'ID Card'),
+(4, 'Bob Brown', '456-789-0123', 'Passport'),
+(5, 'Charlie Davis', '567-890-1234', 'Voter ID'),
+(6, 'Diana Evans', '678-901-2345', 'Driver License'),
+(7, 'Ethan Foster', '789-012-3456', 'ID Card'),
+(8, 'Fiona Green', '890-123-4567', 'Passport'),
+(9, 'George Harris', '901-234-5678', 'Driver License'),
+(10, 'Hannah Ivers', '012-345-6789', 'Voter ID'),
+(11, 'Ian Johnson', '123-456-7891', 'ID Card'),
+(12, 'Julia King', '234-567-8902', 'Passport'),
+(13, 'Kevin Lee', '345-678-9013', 'Driver License'),
+(14, 'Laura Miller', '456-789-0124', 'ID Card'),
+(15, 'Michael Nelson', '567-890-1235', 'Voter ID'),
+(16, 'Nina O Connor', '678-901-2346', 'Passport'),
+(17, 'Oscar Parker', '789-012-3457', 'Driver License'),
+(18, 'Paula Quinn', '890-123-4568', 'ID Card'),
+(19, 'Quentin Roberts', '901-234-5679', 'Voter ID'),
+(20, 'Rachel Smith', '012-345-6780', 'Passport');

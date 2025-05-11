@@ -1,0 +1,31 @@
+CREATE TABLE ServiceUsage (
+    UsageID INT PRIMARY KEY,  -- Renamed from UserID to UsageID
+    UsageDate DATE,
+    GuestID INT,
+    TotalCost DECIMAL(10, 2),
+    ServiceID INT,
+    FOREIGN KEY (GuestID) REFERENCES Guests(GuestID),
+    FOREIGN KEY (ServiceID) REFERENCES Services(ServiceID)
+);
+
+INSERT INTO ServiceUsage (UsageID, UsageDate, GuestID, TotalCost, ServiceID) VALUES
+(1, '2023-10-01', 1, 15.00, 1),  -- Room Service
+(2, '2023-10-02', 2, 10.00, 2),  -- Laundry Service
+(3, '2023-10-03', 3, 100.00, 3), -- Spa Treatment
+(4, '2023-10-04', 4, 30.00, 4),  -- Airport Shuttle
+(5, '2023-10-05', 5, 50.00, 5),  -- Guided Tours
+(6, '2023-10-06', 6, 20.00, 6),  -- Breakfast Buffet
+(7, '2023-10-07', 7, 10.00, 7),  -- Gym Access
+(8, '2023-10-08', 8, 200.00, 8), -- Conference Room Rental
+(9, '2023-10-09', 9, 40.00, 9),  -- Car Rental
+(10, '2023-10-10',10, 5.00, 10),  -- Wi-Fi Access
+(11, '2023-10-11',11, 15.00, 11), -- Parking Service
+(12, '2023-10-12',12, 25.00, 12), -- Pet Care
+(13, '2023-10-13',13, 30.00, 13), -- Housekeeping
+(14, '2023-10-14',14, 60.00, 14), -- Personal Trainer
+(15, '2023-10-15',15, 80.00, 15), -- Massage Therapy
+(16, '2023-10-16',16, 50.00, 16), -- Beauty Salon
+(17, '2023-10-17',17, 0.00, 17),  -- Dinner Reservation (Free)
+(18, '2023-10-18',18, 150.00, 18), -- Event Planning
+(19, '2023-10-19',19, 20.00, 19), -- Childcare Services
+(20, '2023-10-20',20, 100.00, 20); -- Room Upgrade

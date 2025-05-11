@@ -1,0 +1,26 @@
+CREATE TABLE RestaurantMenu (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Category VARCHAR(50),
+    ItemName VARCHAR(100),
+    Description VARCHAR(255),
+    Price DECIMAL(10, 2)
+);
+
+INSERT INTO RestaurantMenu (Category, ItemName, Description, Price) VALUES
+('Mocktails', 'Virgin Mojito', 'Mint, lime, and soda', 500.00),
+('Mocktails', 'Shirley Temple', 'Ginger ale, grenadine, and lemon', 400.50),
+('Mocktails', 'Pina Colada Mocktail', 'Coconut cream, pineapple juice', 600.00),
+('Mocktails', 'Berry Blast', 'Mixed berries and soda', 500.50),
+('Cocktails', 'Margarita', 'Tequila, lime juice, and triple sec', 800.00),
+('Cocktails', 'Mojito', 'Rum, mint, lime, and soda', 700.50),
+('Cocktails', 'Cosmopolitan', 'Vodka, triple sec, and cranberry', 900.00),
+('Cocktails', 'Old Fashioned', 'Bourbon, sugar, and bitters', 1000.00),
+('Hard Drinks', 'Whiskey', 'Various brands available', 700.00),
+('Hard Drinks', 'Vodka', 'Various brands available', 600.50),
+('Hard Drinks', 'Rum', 'Various brands available', 600.00),
+('Hard Drinks', 'Gin', 'Various brands available', 700.00),
+('Food', 'Caesar Salad', 'Romaine, croutons, and dressing', 800.00),
+('Food', 'Margherita Pizza', 'Tomato, mozzarella, and basil', 1000.00),
+('Food', 'Chicken Wings', 'Spicy wings with dipping sauce', 900.00),
+('Food', 'Pasta Primavera', 'Mixed vegetables and pasta', 1200.00),
+('Food', 'Cheeseburger', 'Beef patty, cheese, and toppings', 1100.00);
